@@ -7,7 +7,7 @@ export default function IntroSection() {
   return (
     <section className="intro-section">
       <Image
-        src="./images/final image.jpg"
+        src="./images/finalImage.jpg"
         alt="Luxury Kitchen"
         className="img-fluid w-100"
       />
