@@ -3,12 +3,14 @@ import "../../app/globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css"; // Import the styles
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import Image from 'next/image'
+
 
 function Navbar() {
   return (
     <nav className="navbar navbar-custom bg-white navbar-expand-lg bg-light navbar-light">
       <a className="navbar-brand" href="#">
-        <img
+        <Image
           id="logo"
           src="/images/Logo2x.jpg"
           alt="Logo"
