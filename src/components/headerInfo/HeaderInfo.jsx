@@ -7,7 +7,7 @@ function HeaderInfo() {
       <div className="container d-flex justify-content-between  flex-md-row">
         <div className="text-uppercase text-center mt-2 mt-md-0">Request a Quote</div>
         <div className="text-uppercase text-center mt-2 mt-md-0">Visit Our Showroom</div>
-        <div className="text-uppercase text-center mt-2 mt-md-0">What's in Stock</div>
+        <div className="text-uppercase text-center mt-2 mt-md-0">What&apos;s in Stock</div>
       </div>
     </div>
   );
