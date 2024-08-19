@@ -14,7 +14,7 @@ export default function IntroSection() {
       <div className="intro-content">
         <h1 className="intro-title">ENJOY EVERYDAY LUXURY</h1>
         <p className="intro-description">
-          It's never been easier to design and achieve your ideal outcome.
+          It&apos;s never been easier to design and achieve your ideal outcome.
         </p>
         <a href="#quote" className="btn-custom">
           REQUEST A QUOTE
