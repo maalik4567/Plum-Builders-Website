@@ -1,10 +1,12 @@
 import React from 'react';
 import "../../app/globals.css";
+import Image from 'next/image'
+
 
 export default function IntroSection() {
   return (
     <section className="intro-section">
-      <img
+      <Image
         src="./images/final image.jpg"
         alt="Luxury Kitchen"
         className="img-fluid w-100"
