@@ -1,0 +1,467 @@
+html,
+body {
+  background-color: white;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.info-section .container {
+  max-width: 1200px; /* Adjust as per your design */
+  margin: 0 auto;
+  /* fontWeight: 900, 
+  fontSize: '2rem', 
+  color: '#555', */
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.main{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+/*Navbar*/
+/* Ensure all text in the navbar is uppercase and bold */
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-brand,
+.navbar .dropdown-toggle {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Add space between the navbar buttons */
+.navbar .navbar-nav .nav-item {
+  margin-left: 15px;
+  margin-top: 20px;
+}
+/* In globals.css */
+/* .navbar-custom {
+  margin-left: 10px;
+  margin-right: 10px;
+} */
+
+.nav-link-custom {
+  color: #000000; /* Assuming the text color of the first two items is black */
+}
+
+.nav-link-custom:hover, .nav-link-custom:active {
+  color: #000000; /* Maintain the same color on hover/active */
+}
+
+
+
+/* IntroSection.css */
+.intro-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: flex-end; /* Align content to the bottom */
+  text-align: left; /* Align text to the left */
+  overflow: hidden;
+  padding-left: 20px; /* Add some padding on the left for spacing */
+  padding-bottom: 20px; /* Add some padding at the bottom for spacing */
+}
+
+.intro-section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0.8; /* Adjust the value as needed */
+}
+
+.intro-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.intro-title {
+  /* font-family: 'Roboto', sans-serif; */
+  font-weight: 800;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.1rem;
+  margin-bottom: 20px;
+}
+
+.intro-description {
+  /* font-family: 'Roboto', sans-serif; */
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn-custom {
+  display: inline-block;
+  /* font-family: 'Roboto', sans-serif; */
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  color: #555; /* Change text color to black */
+  background-color: #ffffff; /* Change button background color to white */
+  padding: 12px 65px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid white; /* Change border color to black */
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #000000; /* Change background color to black on hover */
+  color: #ffffff; /* Change text color to white on hover */
+  border-color: #ffffff; /* Change border color to white on hover */
+}
+
+@media (max-width: 767px) {
+  .intro-title {
+    font-size: 2rem;
+  }
+
+  .intro-description {
+    font-size: 1rem;
+  }
+
+  .btn-custom {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+
+/* jOURNERY */
+
+.carousel-container {
+  margin: 0 auto;
+  margin-top: 130px;
+  max-width: 100%;
+  /* padding: 12px 60px; */
+  position: relative;
+  overflow: hidden; /* Ensure no overflow beyond container */
+}
+
+.card-deck {
+  display: flex;
+  gap: 25px; /* Space between cards */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for sliding */
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 350px;
+}
+
+.card-img-top {
+  height: 480px;
+  object-fit: cover;
+}
+
+.card-body {
+  background-color: #555;
+  color: #fff;
+  
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 20px; 
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #555; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  font-weight: 800;
+  padding: 15px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.prev {
+  left: 0px;
+}
+
+.next {
+  right: 0px;
+}
+
+.carousel-button:hover {
+  background-color: #000000; /* Hover effect */
+}
+
+/* Shop */
+/* Shop */
+.shopcarousel {
+  position: relative;
+  margin-top: 20px;
+}
+
+.shopcarousel-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  gap: 15px;
+}
+
+.shopcarousel-item {
+  flex: 0 0 48%;
+  position: relative;
+  transition: transform 0.6s ease;
+  height: 450px;
+}
+
+.shopcarousel-item:first-child {
+  flex: 0 0 30%;
+}
+
+.shopcarousel-item:last-child {
+  flex: 0 0 70%;
+}
+
+.shopcarousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.shopcarousel-caption {
+  position: absolute;
+  text-align: center;
+}
+
+.dropup-caption {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.shop-material-caption {
+  bottom: 20px;
+  right: 50px;
+  border: none;
+  width: auto;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  background-color: #ffffff; /* Change button background color to white */
+  padding: 8px 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid white; /* Change border color to black */
+}
+
+.dropup-btn {
+  background-color: #555;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  border: 2px solid #555;
+  border-radius: 0%;
+  align-items: center;
+}
+
+.shopcarousel-control-prev,
+.shopcarousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1000;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.shopcarousel-control-prev {
+  left: -50px;
+}
+
+.shopcarousel-control-next {
+  right: -50px;
+}
+
+.shopcarousel-control-prev span,
+.shopcarousel-control-next span {
+  font-size: 14px;
+  color: #fff;
+}
+
+.shopcarousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  border-radius: 0%;
+  gap: 8px;
+}
+
+.transition-img {
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+
+
+.shopcarousel-indicators button {
+  width: 10px;
+  height: 13px;
+  margin-top: 10px;
+  background-color: #ddd;
+  border-radius: 2px #ddd;
+}
+
+.shopcarousel-indicators button.active {
+  background-color: #333;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .shopcarousel-inner {
+    flex-direction: column;
+  }
+
+  .shopcarousel-item {
+    flex: 0 0 100%;
+  }
+
+  .shopcarousel-item:first-child,
+  .shopcarousel-item:last-child {
+    flex: 0 0 100%;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #555;
+  color: #f1f1f1;
+  padding: 40px 20px;
+  margin-top: 160px;
+  font-size: 11px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 30px;
+  /* margin: 0 auto; */
+}
+
+.footer-section {
+  width: 23%;
+}
+
+/* .footer-logo-section {
+  text-align: center;
+} */
+
+.footer-logo {
+  max-width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.footer-section h6 {
+  font-weight: bold;
+  /* margin-bottom: 10px; */
+  color: #ddd;
+}
+
+.footer-section p, .footer-section ul, .footer-section ul li {
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* .footer-divider {
+  border: 1px solid #777;
+  margin: 20px;
+} */
+
+.footer-bottom {
+  display: flex;
+  margin-bottom: 0px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 40px;
+  font-size: 12px;
+  margin-left: 21px;
+  margin-right: 21px;
+}
+
+.footer-bottom-left, .footer-bottom-center, .footer-bottom-right {
+  flex: 1;
+}
+
+
+.footer-link {
+  color: #f1f1f1;
+  margin: 0 10px;
+  text-decoration-line: none;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  .footer-section {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-bottom-left, .footer-bottom-center, .footer-bottom-right {
+    width: 100%;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
