@@ -1,12 +1,13 @@
 import React from "react";
 import "../../app/globals.css"; // Importing the CSS file
+import Image from 'next/image'
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-section footer-logo-section">
-          <img src="/images/footer-logo.png" alt="Plum Builders Logo" className="footer-logo" />
+          <Image src="/images/footer-logo.png" alt="Plum Builders Logo" className="footer-logo" />
           <p>THE MODERN BARN®</p>
           <p>CALL: 555-555-9855</p>
           <p>EMAIL: INFO@PLUMBUILDERS.COM</p>
