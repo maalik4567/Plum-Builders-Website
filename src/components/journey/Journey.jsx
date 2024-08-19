@@ -1,6 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import "../../app/globals.css";
+import Image from 'next/image'
+
 
 const Journey = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -93,7 +95,7 @@ const Journey = () => {
         >
           {slidesWithClones.map((slide, index) => (
             <div className="card" key={index}>
-              <img src={slide.src} className="card-img-top" alt={slide.title} />
+              <Image src={slide.src} className="card-img-top" alt={slide.title} />
               <div className="card-body">
                 <h5 className="card-title">{slide.title}</h5>
               </div>
