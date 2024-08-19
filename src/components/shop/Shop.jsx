@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import "../../app/globals.css";
+import Image from 'next/image'
+
 
 const Shop = () => {
   const materials = [
@@ -47,7 +49,7 @@ const Shop = () => {
       <div id="shopcarousel" className="shopcarousel slide">
         <div className="shopcarousel-inner">
           <div className="shopcarousel-item active">
-            <img
+            <Image
               src={materials[currentIndex].src1}
               alt={materials[currentIndex].name}
               className="d-block transition-img"
@@ -88,7 +90,7 @@ const Shop = () => {
             </div>
           </div>
           <div className="shopcarousel-item">
-            <img
+            <Image
               src={materials[currentIndex].src2}
               alt={materials[currentIndex].name}
               className="d-block transition-img"
